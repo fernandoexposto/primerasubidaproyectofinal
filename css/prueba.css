@@ -1,0 +1,37 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.body {  display: grid;
+    grid-template-columns: 0.8fr 0.2fr 1.6fr 1.4fr;
+    grid-template-rows: 0.6fr 1.4fr 1.5fr 0.5fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header Header Header Header"
+      "Aside img img p"
+      "Aside img img p"
+      "Footer Footer Footer Footer";
+  }
+  
+ 
+  
+  .Header {
+       grid-area: Header;
+       width: 100%;
+       background-color: beige;
+ }
+  
+  .Aside { 
+      grid-area: Aside;
+      width: 50%;
+      background-color: green; }
+  
+  .img { grid-area: img; }
+  
+  .p { grid-area: p; }
+
+  .Footer { grid-area: Footer; }
